@@ -1,9 +1,9 @@
 package packFull;
 
 import org.testng.Assert;
-//import org.testng.annotations.Listeners;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-//@Listeners(packFull.ListersProgram.class)
+@Listeners(packFull.ListersProgram.class)
 public class NewSuite {
 @Test
 public void test1() {
