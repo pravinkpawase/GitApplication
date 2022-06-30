@@ -1,13 +1,16 @@
 package packFull;
 
+import org.testng.Assert;
+//import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-
+//@Listeners(packFull.ListersProgram.class)
 public class NewSuite {
 @Test
 public void test1() {
+	Assert.fail();
 	System.out.println("Test1 is Running");
 }
-@Test
+@Test(dependsOnMethods= {"test1"})
 public void test2() {
 	System.out.println("Test2 is Running");
 }
